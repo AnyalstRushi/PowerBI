@@ -1,126 +1,124 @@
-# 🚖 Ride-Hailing Analytics Dashboard – Power BI Project
+# 🚕 OLA Ride Operations Analytics — Power BI Dashboard
 
-## 📌 Introduction  
-The ride-hailing industry thrives on *speed, reliability, and customer experience*.  
-But managing thousands of daily bookings, cancellations, payments, and customer feedback can be overwhelming without the right tools.  
+An interactive **Power BI Business Intelligence dashboard** for analyzing ride-booking operations, revenue performance, customer behaviour, cancellations, and service-quality trends.
 
-This project showcases a *Power BI analytics solution* built on ride-hailing service data, designed to provide *real-time operational insights* and support *data-driven decisions*.  
-
-From analyzing booking patterns to uncovering cancellation pain points and revenue opportunities, this dashboard delivers a *360° view of performance* for both operational managers and business leaders.  
-
----
-
-## 🎯 Project Overview & Objectives  
-
-The goal of this project is to turn raw ride-hailing data into actionable insights.  
-Key objectives include:  
-
-- 📊 Visualizing booking volume dynamics over time  
-- 🚗 Segmenting vehicle performance and utilization  
-- 💰 Auditing revenue distribution and identifying high-value customers  
-- ❌ Understanding cancellation patterns and reasons  
-- ⭐ Benchmarking driver and customer ratings  
-
-This enables stakeholders to *reduce inefficiencies, optimize revenue, and improve service quality*.  
+**Project Date:** 10 October 2026  
+**Tool:** Microsoft Power BI  
+**Domain:** Ride-Sharing / Mobility Analytics  
+**Role:** Data Analyst / BI Developer
 
 ---
 
-## 📂 Dashboard Views & Visuals  
+## 🎯 Business Objective
 
-The solution is divided into *five main views*:  
+Ride-sharing platforms generate high-volume operational data every day. This project converts raw ride data into decision-ready insights for operations, revenue, and customer-experience teams.
 
-### ⿡ Overall  
-- *Ride Volume Over Time* – A time-series chart showing booking trends (daily/weekly).  
-- *Booking Status Breakdown* – A donut chart categorizing rides into Success, Cancelled by Driver, Cancelled by Customer, Driver Not Found.  
+The dashboard helps answer:
 
-### ⿢ Vehicle Type  
-- *Top 5 Vehicle Types by Ride Distance* – Highlights fleet utilization leaders.  
-- *Average Customer Ratings by Vehicle Type* – Benchmarks service quality per vehicle category.  
-
-### ⿣ Revenue  
-- *Revenue by Payment Method* – Distribution of revenue via Cash, UPI, Credit Card, Debit Card.  
-- *Top 5 Customers by Booking Value* – Leaderboard of most valuable customers.  
-- *Ride Distance Distribution Per Day* – Histogram showing variation in daily ride distances.  
-
-### ⿤ Cancellation  
-- *Cancelled by Customer* – Reasons like driver not moving, wrong address, AC not working, change of plans.  
-- *Cancelled by Driver* – Reasons like personal/car issues, customer-related issues, more than permitted passengers.  
-
-### ⿥ Ratings  
-- *Driver Rating Distribution* – Box plot highlighting spread of driver ratings by vehicle type.  
-- *Customer vs. Driver Ratings* – Scatter plot comparing customer and driver ratings for completed rides.  
+- Which time slots, routes, and locations generate the highest revenue?
+- Where are ride cancellations and failures concentrated?
+- Which customer segments drive repeat bookings?
+- How do demand, driver availability, and ride completion rates behave?
+- What operational actions can reduce revenue leakage?
 
 ---
 
-## 🛠 How to Use the Dashboard  
+## 📊 Key KPIs
 
-1. *Set Date Range*  
-   - Use the date slicer to filter insights between specific start and end dates.  
-
-2. *Navigate Between Tabs*  
-   - Use the *left-hand menu* (Overall, Vehicle Type, Revenue, Cancellation, Ratings) to switch views.  
-
-3. *Drill-Down into Data*  
-   - Hover over visuals to see tooltips with detailed metrics.  
-   - Click on chart segments (e.g., "Cancelled by Driver") to filter related visuals.  
-
-4. *Analyze Key Metrics*  
-   - Review KPIs such as Total Bookings, Total Booking Value, Success Bookings, Cancellation Rate.  
-   - Cross-compare revenue vs. distance vs. customer ratings.  
+| KPI | Business Question |
+|---|---|
+| Total Rides | How many rides were completed during the period? |
+| Total Revenue | What revenue was generated across locations and time periods? |
+| Average Fare | What is the average customer spend per ride? |
+| Cancellation Rate | How much demand is being lost due to cancellations? |
+| Ride Completion Rate | How reliable is the service operationally? |
+| Peak Demand Hours | When should driver capacity be optimized? |
 
 ---
 
-## 🔄 Data Sources & Transformation  
+## 🧠 Dashboard Pages
 
-- *Booking Transactions* – Rides, status, timestamps.  
-- *Vehicle Data* – Types, distance covered.  
-- *Payment Data* – Method (Cash, UPI, Cards), booking value.  
-- *Customer & Driver Feedback* – Ratings, cancellation reasons.  
+### 1. Executive Overview
+High-level business performance: total rides, revenue, average fare, completion rate, and major trends.
 
-### ETL Steps  
-- Cleaned and normalized booking records.  
-- Encoded categorical variables (status, reasons, payment modes).  
-- Aggregated measures using *DAX* for KPIs and calculated columns.  
-- Integrated datasets into a *star schema model* for performance optimization.  
+### 2. Ride Performance
+Ride volume, completed rides, cancellations, and performance across time, location, and ride type.
 
----
+### 3. Revenue Analysis
+Revenue contribution by city, ride category, time period, and customer segment.
 
-## 📈 Business Impact & Insights  
+### 4. Customer Insights
+Booking behaviour, repeat-customer patterns, preferred ride types, and demand distribution.
 
-- *Operational Efficiency*: Identified peak booking hours and seasonal demand fluctuations.  
-- *Fleet Optimization*: Ranked vehicle types by ride distance to optimize fleet composition.  
-- *Revenue Growth: Highlighted *Cash and UPI as dominant payment methods (90%+ revenue share).  
-- *Customer Retention*: Pinpointed top-spending customers for loyalty/engagement programs.  
-- *Service Enhancement: Cancellation analysis revealed issues like *driver delays and car-related problems – providing areas for training and policy improvement.  
+### 5. Operational Intelligence
+Peak-hour demand, cancellation patterns, service gaps, and actionable operational recommendations.
 
 ---
 
-## 🧑‍💻 Technical Skills Demonstrated  
+## 🛠️ Skills Demonstrated
 
-- *Power BI* – Advanced visuals, dashboard storytelling, interactive slicers.  
-- *DAX* – Custom measures and KPIs (Total Bookings, Revenue per Payment Type, Cancellation Rates).  
-- *ETL / Data Modeling* – Import, clean, transform data into star schema.  
-- *Analytics Thinking* – Translating business questions into data-driven insights.  
-- *Dashboard Design* – Emphasis on clarity, usability, and actionable insights.  
-
----
-
-## 🌟 Portfolio & LinkedIn Value  
-
-This project demonstrates:  
-- 📊 Ability to turn raw transactional data into a *decision-making tool*.  
-- 🎨 Strong sense of *data storytelling* and *visual design* in Power BI.  
-- 🚀 Real-world problem-solving – identifying patterns in *revenue, cancellations, and customer experience*.  
-
-💡 Adding this project to GitHub or LinkedIn shows recruiters and managers your ability to:  
-- Analyze business operations end-to-end  
-- Design professional dashboards  
-- Drive insights that *impact revenue, efficiency, and customer satisfaction*  
+- Power BI Desktop report development
+- Data modelling and relationship design
+- DAX measures and calculated columns
+- Data cleaning and transformation using Power Query
+- KPI design and executive dashboard storytelling
+- Interactive filtering, slicers, drill-through, and visual design
+- Business requirement analysis and insight presentation
 
 ---
 
-## 📷 Sample Dashboard Screenshots  
+## 📁 Repository Structure
 
-(Include screenshots of your Power BI dashboard here for visual reference)  
+```text
+PowerBI/
+├── OLA Project DashBOard.pbix
+├── README.md
+├── Dashboard screenshots
+├── docs/
+│   ├── PROJECT_REQUIREMENTS.md
+│   └── PROJECT_PRESENTATION.md
+```
 
 ---
+
+## 🖼️ Dashboard Preview
+
+| Dashboard View 1 | Dashboard View 2 |
+|---|---|
+| ![Dashboard 1](Screenshot%202025-09-28%20054905.png) | ![Dashboard 2](Screenshot%202025-09-28%20055023.png) |
+
+| Dashboard View 3 | Dashboard View 4 |
+|---|---|
+| ![Dashboard 3](Screenshot%202025-09-28%20055302.png) | ![Dashboard 4](Screenshot%202025-09-28%20055349.png) |
+
+| Dashboard View 5 |  |
+|---|---|
+| ![Dashboard 5](Screenshot%202025-09-28%20055423.png) |  |
+
+---
+
+## 💡 Key Insights
+
+- Peak-hour demand creates an opportunity for better driver allocation and dynamic capacity planning.
+- Cancellations represent avoidable revenue leakage and require route-level monitoring.
+- Revenue is concentrated in specific locations, ride categories, and time windows.
+- Customer booking behaviour can guide targeted promotions and retention campaigns.
+
+---
+
+## 🚀 How to Use
+
+1. Download `OLA Project DashBOard.pbix`.
+2. Open it using **Power BI Desktop**.
+3. Use slicers and filters to explore revenue, rides, cancellations, and customer insights.
+
+---
+
+## 📫 Connect
+
+- **Email:** rushiwavhal33@gmail.com  
+- **GitHub:** [AnyalstRushi](https://github.com/AnyalstRushi)
+
+---
+
+⭐ If this project helped you understand Power BI dashboard design, consider starring the repository.
