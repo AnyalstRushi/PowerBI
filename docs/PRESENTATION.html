@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OLA Ride Operations Analytics — Power BI Project Presentation</title>
+<style>
+:root{--bg:#070b18;--card:#0f1730;--accent:#22d3ee;--accent2:#a78bfa;--text:#e8edf7;--muted:#9aa7bd}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%,rgba(34,211,238,.18),transparent),radial-gradient(900px 500px at 10% 110%,rgba(167,139,250,.18),transparent),var(--bg);color:var(--text);min-height:100vh}
+.deck{max-width:1100px;margin:auto;padding:48px 24px 80px}
+.slide{background:linear-gradient(145deg,rgba(15,23,48,.96),rgba(9,14,30,.96));border:1px solid rgba(148,163,184,.18);border-radius:24px;padding:44px;margin-bottom:28px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.tag{display:inline-block;background:rgba(34,211,238,.12);color:var(--accent);border:1px solid rgba(34,211,238,.35);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,62px);line-height:1.05;margin:18px 0 12px;background:linear-gradient(90deg,#fff,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(26px,4vw,38px);margin-bottom:16px}
+h3{color:var(--accent);margin:18px 0 8px}
+p,li{color:var(--muted);font-size:17px;line-height:1.65}
+ul{padding-left:22px;margin-top:10px}
+li{margin:8px 0}
+strong{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(148,163,184,.16);border-radius:18px;padding:20px}
+.card b{display:block;color:#fff;font-size:18px;margin-bottom:6px}
+.kpi{font-size:30px;font-weight:800;color:var(--accent)}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:20px}
+.step{background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.35);color:#fff;padding:12px 16px;border-radius:14px;font-weight:600}
+.arrow{color:var(--accent);font-size:22px}
+.footer{margin-top:20px;color:var(--muted);font-size:14px}
+.badge{display:inline-block;margin:6px 6px 0 0;background:rgba(255,255,255,.06);border:1px solid rgba(148,163,184,.2);padding:6px 12px;border-radius:999px;font-size:13px;color:#dbeafe}
+</style>
+</head>
+<body>
+<main class="deck">
+
+<section class="slide">
+<span class="tag">Power BI • Business Intelligence</span>
+<h1>OLA Ride Operations Analytics</h1>
+<p>Turning ride-booking data into revenue, operations, and customer insights.</p>
+<div class="footer">Rushi Wavhal • 10 October 2026 • Microsoft Power BI</div>
+</section>
+
+<section class="slide">
+<span class="tag">Business Context</span>
+<h2>Ride-sharing runs on data</h2>
+<p>Every booking creates data across customers, drivers, locations, ride status, time, and revenue. Business teams need one connected view to make fast decisions.</p>
+<div class="grid">
+<div class="card"><b>Demand</b>Identify peak hours and high-demand zones</div>
+<div class="card"><b>Revenue</b>Track earnings, fares, and high-value segments</div>
+<div class="card"><b>Operations</b>Monitor completion, cancellations, and service gaps</div>
+<div class="card"><b>Customers</b>Understand booking and repeat-ride behaviour</div>
+</div>
+</section>
+
+<section class="slide">
+<span class="tag">Problem Statement</span>
+<h2>Scattered reports slow decisions</h2>
+<ul>
+<li>Revenue performance is difficult to track across time and locations.</li>
+<li>Cancellation patterns and revenue leakage are not immediately visible.</li>
+<li>Peak-demand planning depends on manual analysis.</li>
+<li>Operational teams lack a single executive-friendly dashboard.</li>
+</ul>
+</section>
+
+<section class="slide">
+<span class="tag">Objective</span>
+<h2>One dashboard. Clear decisions.</h2>
+<p>Build an interactive Power BI solution that converts raw ride data into actionable insights for operations, revenue, and customer-experience teams.</p>
+<div class="grid">
+<div class="card"><span class="kpi">5</span><b>Dashboard views</b>Executive to operational analysis</div>
+<div class="card"><span class="kpi">6+</span><b>Core KPIs</b>Rides, revenue, fare, cancellations</div>
+<div class="card"><span class="kpi">100%</span><b>Interactive</b>Slicers, filters, and drill-down</div>
+</div>
+</section>
+
+<section class="slide">
+<span class="tag">Solution Architecture</span>
+<h2>From raw data to decisions</h2>
+<div class="flow">
+<span class="step">Raw Ride Data</span><span class="arrow">→</span>
+<span class="step">Power Query</span><span class="arrow">→</span>
+<span class="step">Data Model</span><span class="arrow">→</span>
+<span class="step">DAX KPIs</span><span class="arrow">→</span>
+<span class="step">Power BI Dashboard</span><span class="arrow">→</span>
+<span class="step">Business Action</span>
+</div>
+<h3>Capabilities</h3>
+<ul>
+<li>Clean and transform ride data using Power Query</li>
+<li>Build relationships for cross-filtering and drill-down</li>
+<li>Create reusable DAX measures for KPIs</li>
+<li>Design executive-ready visuals and insights</li>
+</ul>
+</section>
+
+<section class="slide">
+<span class="tag">Key KPIs</span>
+<h2>What the dashboard measures</h2>
+<div class="grid">
+<div class="card"><b>Total Rides</b>Overall booking volume</div>
+<div class="card"><b>Total Revenue</b>Business performance</div>
+<div class="card"><b>Average Fare</b>Customer spend per ride</div>
+<div class="card"><b>Cancellation Rate</b>Lost demand and service risk</div>
+<div class="card"><b>Completion Rate</b>Operational reliability</div>
+<div class="card"><b>Peak Demand</b>Driver and capacity planning</div>
+</div>
+</section>
+
+<section class="slide">
+<span class="tag">Dashboard Pages</span>
+<h2>Five analytical views</h2>
+<div class="grid">
+<div class="card"><b>1. Executive Overview</b>High-level KPIs and trends</div>
+<div class="card"><b>2. Ride Performance</b>Completed rides and cancellations</div>
+<div class="card"><b>3. Revenue Analysis</b>Revenue by time, location, category</div>
+<div class="card"><b>4. Customer Insights</b>Booking and repeat-customer patterns</div>
+<div class="card"><b>5. Operational Intelligence</b>Demand, gaps, and actions</div>
+</div>
+</section>
+
+<section class="slide">
+<span class="tag">Insights</span>
+<h2>Business value delivered</h2>
+<ul>
+<li><strong>Peak-hour demand</strong> creates an opportunity for smarter driver allocation.</li>
+<li><strong>Cancellations</strong> represent measurable revenue leakage and need route-level monitoring.</li>
+<li><strong>Revenue concentration</strong> reveals the locations and time windows that matter most.</li>
+<li><strong>Customer behaviour</strong> supports targeted promotions and retention campaigns.</li>
+</ul>
+</section>
+
+<section class="slide">
+<span class="tag">Recommendations</span>
+<h2>From insight to action</h2>
+<ul>
+<li>Increase driver availability during high-demand hours.</li>
+<li>Monitor cancellation-prone routes and time slots.</li>
+<li>Target high-value customer segments with relevant offers.</li>
+<li>Improve service quality in low-completion locations.</li>
+<li>Use revenue trends to guide pricing and capacity strategy.</li>
+</ul>
+</section>
+
+<section class="slide">
+<span class="tag">Skills Demonstrated</span>
+<h2>End-to-end BI capability</h2>
+<div>
+<span class="badge">Power BI Desktop</span><span class="badge">Power Query</span><span class="badge">Data Modelling</span><span class="badge">DAX</span><span class="badge">KPI Design</span><span class="badge">Data Visualization</span><span class="badge">Business Analysis</span><span class="badge">Dashboard Storytelling</span>
+</div>
+<h3>Conclusion</h3>
+<p>This project demonstrates the complete BI workflow: business understanding, data preparation, modelling, KPI design, visualization, and insight delivery.</p>
+<div class="footer">GitHub: github.com/AnyalstRushi • Email: rushiwavhal33@gmail.com</div>
+</section>
+
+</main>
+</body>
+</html>
