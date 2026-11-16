@@ -14,7 +14,7 @@ permissions:
   contents: read
 concurrency:
   group: powerbi-showcase
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,21 +22,42 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m pip install Pillow==11.3.0
-      - name: Build GIFs, update README and prepare public site
-        run: python scripts/build_showcase.py
-      - name: Commit only generated GIFs and README
+      - name: Regenerate previews on latest main and safely commit
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/analyst-rushi-hero.gif assets/powerbi-report-preview.gif README.md
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout -B preview-publish origin/main
+            python scripts/build_showcase.py
+            git add assets/analyst-rushi-hero.gif assets/powerbi-report-preview.gif README.md
+            if git diff --cached --quiet; then
+              echo 'Previews already current; website has been rebuilt.'
+              exit 0
+            fi
             git commit -m 'docs: embed branded hero and original report GIF preview'
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt ${attempt} rejected; checking whether main advanced."
+            git fetch origin main
+            if git merge-base --is-ancestor origin/main HEAD; then
+              echo 'Remote main did not advance; check repository permissions or branch rules.'
+              exit 1
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to publish generated previews after three attempts.'
+          exit 1
       - name: Upload preview evidence
         uses: actions/upload-artifact@v4
         with:
