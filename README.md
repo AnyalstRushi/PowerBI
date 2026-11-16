@@ -1,12 +1,12 @@
 <!-- POWERBI_PREVIEWS -->
-![Analyst Rushi — The Mobility Atlas animated hero](assets/analyst-rushi-hero.gif)
+![Analyst Rushi / OLA Ride Intelligence](assets/analyst-rushi-hero.gif)
 
-## The report, in its original form
-![Original report views with Analyst Rushi framing](assets/powerbi-report-preview.gif)
+## Original report walkthrough
+![Original dashboard capture gallery](assets/powerbi-report-preview.gif)
 
-[Explore the Mobility Atlas](https://anyalstrushi.github.io/PowerBI/showcase/) · [Build and deployment status](https://github.com/AnyalstRushi/PowerBI/actions/workflows/publish-showcase.yml)
+[Explore the case study website](https://anyalstrushi.github.io/PowerBI/showcase/) · [Build and deployment](https://github.com/AnyalstRushi/PowerBI/actions/workflows/publish-showcase.yml)
 
-Availability requires a successful Pages deployment. Hero motion is illustrative; the report preview is a screenshot slideshow, not an interactive Power BI embed.
+Availability requires successful deployment. Animated previews use original screenshots; they are not live Power BI. Independent portfolio, not affiliated with Ola.
 
 <!-- /POWERBI_PREVIEWS -->
 
