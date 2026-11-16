@@ -1,3 +1,15 @@
+<!-- POWERBI_PREVIEWS -->
+![Analyst Rushi animated hero](assets/analyst-rushi-hero.gif)
+
+## Original dashboard walkthrough
+![Original Power BI screenshot slideshow](assets/powerbi-report-preview.gif)
+
+[Open branded website](https://anyalstrushi.github.io/PowerBI/showcase/) · [Deployment status](https://github.com/AnyalstRushi/PowerBI/actions/workflows/publish-showcase.yml)
+
+Website availability depends on a successful Pages deployment. This GIF is a screenshot slideshow, not live Power BI.
+
+<!-- /POWERBI_PREVIEWS -->
+
 # Analyst Rushi / OLA Ride Operations — Power BI
 
 Independent mobility-analytics portfolio with an Ola-inspired charcoal, lime and ivory showcase. Not affiliated with Ola.
@@ -39,7 +51,7 @@ This architecture has not been extracted from or audited against the binary PBIX
 python -m http.server 8000
 ```
 
-Open http://localhost:8000/showcase/. A GitHub HTML source link displays code; it is not itself a hosted web application. Public Pages deployment is not configured or verified by this update.
+Open http://localhost:8000/showcase/. A GitHub HTML source link displays code; it is not itself a hosted web application. GitHub Pages publishing is automated; successful public deployment still requires verification.
 
 ## Theme and branding
 
