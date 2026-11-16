@@ -1,12 +1,12 @@
 <!-- POWERBI_PREVIEWS -->
-![Analyst Rushi animated hero](assets/analyst-rushi-hero.gif)
+![Analyst Rushi — The Mobility Atlas animated hero](assets/analyst-rushi-hero.gif)
 
-## Original dashboard walkthrough
-![Original Power BI screenshot slideshow](assets/powerbi-report-preview.gif)
+## The report, in its original form
+![Original report views with Analyst Rushi framing](assets/powerbi-report-preview.gif)
 
-[Open branded website](https://anyalstrushi.github.io/PowerBI/showcase/) · [Deployment status](https://github.com/AnyalstRushi/PowerBI/actions/workflows/publish-showcase.yml)
+[Explore the Mobility Atlas](https://anyalstrushi.github.io/PowerBI/showcase/) · [Build and deployment status](https://github.com/AnyalstRushi/PowerBI/actions/workflows/publish-showcase.yml)
 
-Website availability depends on a successful Pages deployment. This GIF is a screenshot slideshow, not live Power BI.
+Availability requires a successful Pages deployment. Hero motion is illustrative; the report preview is a screenshot slideshow, not an interactive Power BI embed.
 
 <!-- /POWERBI_PREVIEWS -->
 
@@ -56,7 +56,7 @@ Open http://localhost:8000/showcase/. A GitHub HTML source link displays code; i
 ## Theme and branding
 
 - Display brand: Analyst Rushi.
-- Main palette: charcoal #111613, electric lime #B9F227, ivory #F3F5E9.
+- Main palette: graphite #0B110D, acid lime #C6FF32, ivory #F5F3E8; mint #83CDB4 and amber #F2B65B accents.
 - Theme file: themes/analyst-rushi-mobility.json. Import and validate it in Power BI Desktop before saving a themed report.
 - Original PBIX and screenshots are unchanged. Website colors do not automatically recolor report visuals.
 
