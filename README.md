@@ -1,141 +1,68 @@
-# 🚕 OLA Ride Operations Analytics — Power BI Dashboard
+# Analyst Rushi / OLA Ride Operations — Power BI
 
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Domain](https://img.shields.io/badge/Domain-Mobility%20Analytics-22D3EE?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Portfolio%20Project-A78BFA?style=for-the-badge)
-![Date](https://img.shields.io/badge/Date-10%20Oct%202026-94A3B8?style=for-the-badge)
+Independent mobility-analytics portfolio with an Ola-inspired charcoal, lime and ivory showcase. Not affiliated with Ola.
 
-An interactive **Power BI Business Intelligence dashboard** for analyzing ride-booking operations, revenue performance, customer behaviour, cancellations, and service-quality trends.
+[Branded HTML showcase source](showcase/index.html) · [Download original PBIX](OLA%20Project%20DashBOard.pbix) · [Power BI theme JSON](themes/analyst-rushi-mobility.json) · [Existing presentation](docs/PRESENTATION.html)
 
-> **Goal:** Convert raw ride-booking data into clear, decision-ready insights for operations, revenue, and customer-experience teams.
+## Original report preview
 
----
+![Original Power BI dashboard](Screenshot%202025-09-28%20054905.png)
 
-## 📑 Project Documents
+The HTML showcase adds a responsive five-view screenshot gallery, optional timed playback, an illustrative animated analytics route and a conceptual architecture story. It does not embed a live Power BI report or change the PBIX.
 
-| Document | Purpose |
+## Explore the original views
+
+| View 2 | View 3 |
 |---|---|
-| [📊 Interactive Presentation](docs/PRESENTATION.html) | Visual 10-slide project presentation |
-| [📝 Project Requirements](docs/PROJECT_REQUIREMENTS.md) | Business, functional, and data requirements |
-| [🎯 Presentation Document](docs/PROJECT_PRESENTATION.md) | Slide-by-slide project walkthrough |
-| [📈 Power BI Dashboard](OLA%20Project%20DashBOard.pbix) | Downloadable `.pbix` dashboard |
+| ![Original view 2](Screenshot%202025-09-28%20055023.png) | ![Original view 3](Screenshot%202025-09-28%20055302.png) |
 
----
+| View 4 | View 5 |
+|---|---|
+| ![Original view 4](Screenshot%202025-09-28%20055349.png) | ![Original view 5](Screenshot%202025-09-28%20055423.png) |
 
-## 🎯 Business Objective
-
-Ride-sharing platforms generate high-volume operational data every day. This project converts raw ride data into decision-ready insights for operations, revenue, and customer-experience teams.
-
-The dashboard helps answer:
-
-- Which time slots, routes, and locations generate the highest revenue?
-- Where are ride cancellations and failures concentrated?
-- Which customer segments drive repeat bookings?
-- How do demand, driver availability, and ride completion rates behave?
-- What operational actions can reduce revenue leakage?
-
----
-
-## 🧠 Solution Architecture
+## Conceptual architecture
 
 ```mermaid
 flowchart LR
-A[Raw Ride Data] --> B[Power Query
-Cleaning & Transformation]
-B --> C[Data Model
-Relationships]
-C --> D[DAX Measures
-KPIs]
-D --> E[Interactive Power BI Dashboard]
-E --> F[Business Insights
-& Decisions]
+ A[Ride-booking data] --> B[Power Query transformations]
+ B --> C[Semantic model]
+ C --> D[DAX measures]
+ D --> E[Power BI report]
+ E --> F[Human interpretation]
 ```
 
----
+This architecture has not been extracted from or audited against the binary PBIX. Validate KPI definitions and model relationships before repeating business conclusions.
 
-## 📊 Key KPIs
+## Run the visual showcase locally
 
-| KPI | Business Question |
-|---|---|
-| Total Rides | How many rides were completed during the period? |
-| Total Revenue | What revenue was generated across locations and time periods? |
-| Average Fare | What is the average customer spend per ride? |
-| Cancellation Rate | How much demand is being lost due to cancellations? |
-| Ride Completion Rate | How reliable is the service operationally? |
-| Peak Demand Hours | When should driver capacity be optimized? |
+```bash
+python -m http.server 8000
+```
 
----
+Open http://localhost:8000/showcase/. A GitHub HTML source link displays code; it is not itself a hosted web application. Public Pages deployment is not configured or verified by this update.
 
-## 🖥️ Dashboard Pages
+## Theme and branding
 
-### 1. Executive Overview
-High-level business performance: total rides, revenue, average fare, completion rate, and major trends.
+- Display brand: Analyst Rushi.
+- Main palette: charcoal #111613, electric lime #B9F227, ivory #F3F5E9.
+- Theme file: themes/analyst-rushi-mobility.json. Import and validate it in Power BI Desktop before saving a themed report.
+- Original PBIX and screenshots are unchanged. Website colors do not automatically recolor report visuals.
 
-### 2. Ride Performance
-Ride volume, completed rides, cancellations, and performance across time, location, and ride type.
+## Real interactive Power BI
 
-### 3. Revenue Analysis
-Revenue contribution by city, ride category, time period, and customer segment.
+Not connected. A published report or approved secure embed URL is required. Do not publish confidential data publicly. Timed screenshot playback is an animated preview, not real-time data or interactive Power BI.
 
-### 4. Customer Insights
-Booking behaviour, repeat-customer patterns, preferred ride types, and demand distribution.
+## Supporting documentation
 
-### 5. Operational Intelligence
-Peak-hour demand, cancellation patterns, service gaps, and actionable operational recommendations.
+[Requirements](docs/PROJECT_REQUIREMENTS.md) · [Project walkthrough](docs/PROJECT_PRESENTATION.md)
 
----
+## Verification status
 
-## 🛠️ Skills Demonstrated
+- [x] Use existing report screenshot filenames.
+- [x] Add branded HTML source and a separate theme JSON.
+- [ ] Browser QA and mobile visual inspection.
+- [ ] Validate theme import in Power BI Desktop.
+- [ ] Audit report metrics and semantic model.
+- [ ] Verify hosting and connect an authorized live report.
 
-- Power BI Desktop report development
-- Data modelling and relationship design
-- DAX measures and calculated columns
-- Data cleaning and transformation using Power Query
-- KPI design and executive dashboard storytelling
-- Interactive filtering, slicers, drill-through, and visual design
-- Business requirement analysis and insight presentation
-
----
-
-## 🖼️ Dashboard Preview
-
-| Dashboard View 1 | Dashboard View 2 |
-|---|---|
-| ![Dashboard 1](Screenshot%202025-09-28%20054905.png) | ![Dashboard 2](Screenshot%202025-09-28%20055023.png) |
-
-| Dashboard View 3 | Dashboard View 4 |
-|---|---|
-| ![Dashboard 3](Screenshot%202025-09-28%20055302.png) | ![Dashboard 4](Screenshot%202025-09-28%20055349.png) |
-
-| Dashboard View 5 |  |
-|---|---|
-| ![Dashboard 5](Screenshot%202025-09-28%20055423.png) |  |
-
----
-
-## 💡 Key Insights
-
-- Peak-hour demand creates an opportunity for better driver allocation and dynamic capacity planning.
-- Cancellations represent avoidable revenue leakage and require route-level monitoring.
-- Revenue is concentrated in specific locations, ride categories, and time windows.
-- Customer booking behaviour can guide targeted promotions and retention campaigns.
-
----
-
-## 🚀 How to Use
-
-1. Download `OLA Project DashBOard.pbix`.
-2. Open it using **Power BI Desktop**.
-3. Use slicers and filters to explore revenue, rides, cancellations, and customer insights.
-4. Open [`docs/PRESENTATION.html`](docs/PRESENTATION.html) for the project presentation.
-
----
-
-## 📫 Connect
-
-- **Email:** rushiwavhal33@gmail.com  
-- **GitHub:** [AnyalstRushi](https://github.com/AnyalstRushi)
-
----
-
-⭐ If this project helped you understand Power BI dashboard design, consider starring the repository.
+GitHub: [AnyalstRushi](https://github.com/AnyalstRushi) · Email: rushiwavhal33@gmail.com
